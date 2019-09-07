@@ -109,4 +109,4 @@ class Test_Blackjack:
     agent = create_skill_agent(os.path.dirname(__file__), lang='en')
     agent.parse('play blackjack')
     call = agent.model.on_answer.get_call()
-    expect(call.text).to.equal('Welcome in blackjack game')
+    expect(call.text).to.equal('Bet to play')
